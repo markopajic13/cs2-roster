@@ -1,0 +1,47 @@
+
+
+body {
+   /*min-height: 100vh;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+    color: black;
+    background: linear-gradient(180deg, white, red);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 { 
+    font-weight: 700;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+ul {
+    line-height: 1.5;
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: cornflowerblue;
+    background-color: blueviolet;
+    background: linear-gradient(to right , blueviolet, blue)
+}

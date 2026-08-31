@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="reset.css">
+        <title>Fan anketa</title>
+    </head>
+    <body>
+        <form action="/obrada" method="POST">
+            <label for="fan-ime">Tvoj nadimak:</label>
+            <input type="text" id="fan-ime" name="korisnik" placeholder="Unesi nadimak">
+            
+            <p class="omiljeni-igrac">Izaberi omiljenog igraca</p>
+            <input type="radio" id="frozen" name="omiljeni-igrac" value="frozen" checked>
+            <label for="frozen">frozen</label>
+
+            <input type="radio" id="jacobbb" name="omiljeni-igrac" value="jacobbb">
+            <label for="jacobbb">jacobbb</label>
+
+            <input type="radio" id="Twistzz" name="omiljeni-igrac" value="Twistzz">
+            <label for="Twistzz">Twistzz</label>
+
+            <input type="radio" id="JBOEN" name="omiljeni-igrac" value="JBOEN">
+            <label for="JBOEN">JBOEN</label>
+
+            <input type="radio" id="Neityu" name="omiljeni-igrac" value="Neityu">
+            <label for="Neityu">Neityu</label>
+
+            <label for="izbor-mape">Omiljena-mapa</label>
+            <select id="izbor-mape" name="mapa">
+                <option value="mirage">Mirage</option>
+                <option value="inferno">Inferno</option>
+                <option value="nuke">Nuke</option>
+            </select>
+
+            <button>Posalji</button>
+            <a href="index.html">Nazad na Roster</a>
+        </form>
+    </body>
+</html>
