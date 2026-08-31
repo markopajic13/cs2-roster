@@ -1,0 +1,53 @@
+.survey {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+    background: linear-gradient(to right, violet, blue);
+    background-repeat: no-repeat;
+}
+
+.survey__heading {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: aquamarine;
+}
+
+.survey__label {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.survey__label--nickname {
+    color: aquamarine;
+    text-transform: uppercase;
+}
+
+.survey__label--map {
+    font-size: 1.2rem;
+}
+
+.survey__input {
+    font-size: 1rem;
+    color: black;
+}
+
+.survey__select {
+    font-size: 1rem;
+    color: cornflowerblue;
+}
+
+.survey__submit {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: cornflowerblue;
+    background: linear-gradient(to right, blueviolet, blue);
+}
+
+.survey__back-link {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.survey__back-link:hover {
+    text-decoration: underline;
+}
