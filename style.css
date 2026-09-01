@@ -27,6 +27,9 @@ h2 {
 
 ul {
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 a {

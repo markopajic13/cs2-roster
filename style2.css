@@ -1,15 +1,16 @@
 .survey {
-    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 2;
     background: linear-gradient(to right, violet, blue);
     background-repeat: no-repeat;
+    
 }
 
 .survey__heading {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: aquamarine;
+    text-align: center;
 }
 
 .survey__label {
@@ -30,6 +31,18 @@
     font-size: 1rem;
     color: black;
 }
+.survey__radio--group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.survey__option {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+
+}   
 
 .survey__select {
     font-size: 1rem;

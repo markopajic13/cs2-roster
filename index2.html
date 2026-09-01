@@ -9,28 +9,40 @@
         <form class="survey" action="/obrada" method="POST">
             <label class="survey__label--nickname" for="fan-ime">Tvoj nadimak:</label>
             <input class="survey__input" type="text" id="fan-ime" name="korisnik" placeholder="Unesi nadimak">
-            
+           
             <p class="survey__heading">Izaberi omiljenog igraca</p>
-            <input class="survey__radio" type="radio" id="frozen" name="omiljeni-igrac" value="frozen" checked>
-            <label class="survey__label" for="frozen">frozen</label>
+            
+        <div class="survey__radio--group" >
+            <div class="survey__option">
+            <input type="radio" id="frozen" name="omiljeni-igrac" value="frozen" checked>
+            <label for="frozen">frozen</label>
+            </div>
+            
+            <div class="survey__option">
+            <input type="radio" id="jacobbb" name="omiljeni-igrac" value="jacobbb">
+            <label for="jacobbb">jacobbb</label>
+            </div>
 
-            <input class="survey__radio" type="radio" id="jacobbb" name="omiljeni-igrac" value="jacobbb">
-            <label class="survey__label" for="jacobbb">jacobbb</label>
-
-            <input class="survey__radio" type="radio" id="Twistzz" name="omiljeni-igrac" value="Twistzz">
-            <label class="survey__label" for="Twistzz">Twistzz</label>
-
-            <input class="survey__radio" type="radio" id="JBOEN" name="omiljeni-igrac" value="JBOEN">
-            <label class="survey__label" for="JBOEN">JBOEN</label>
-
-            <input class="survey__radio" type="radio" id="Neityu" name="omiljeni-igrac" value="Neityu">
-            <label class="survey__label" for="Neityu">Neityu</label>
+            <div class="survey__option">
+            <input type="radio" id="Twistzz" name="omiljeni-igrac" value="Twistzz">
+            <label for="Twistzz">Twistzz</label>
+            </div>   
+            
+            <div class="survey__option">
+            <input type="radio" id="JBOEN" name="omiljeni-igrac" value="JBOEN">
+            <label for="JBOEN">JBOEN</label>
+            </div>
+            
+            <div class="survey__option">
+            <input type="radio" id="Neityu" name="omiljeni-igrac" value="Neityu">
+            <label for="Neityu">Neityu</label>
+            </div>
 
             <label class="survey__label--map" for="izbor-mape">Omiljena-mapa</label>
             <select class="survey__select" id="izbor-mape" name="mapa">
                 <option value="mirage">Mirage</option>
                 <option value="inferno">Inferno</option>
-                <option value="nuke">Nuke</option>
+                <option value="nuke">Nuke</option> 
             </select>
 
             <button class="survey__submit">Posalji</button>
