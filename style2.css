@@ -3,7 +3,7 @@
     line-height: 2;
     background: linear-gradient(to right, violet, blue);
     background-repeat: no-repeat;
-    
+    text-align: center;
 }
 
 .survey__heading {
@@ -31,7 +31,7 @@
     font-size: 1rem;
     color: black;
 }
-.survey__radio--group{
+.survey__radio--group {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,12 +41,12 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 10px;
-
 }   
 
 .survey__select {
     font-size: 1rem;
     color: cornflowerblue;
+    gap: 10px ;
 }
 
 .survey__submit {
@@ -54,6 +54,9 @@
     text-transform: capitalize;
     color: cornflowerblue;
     background: linear-gradient(to right, blueviolet, blue);
+    display: block;
+    width: 300px;
+    margin: auto;
 }
 
 .survey__back-link {

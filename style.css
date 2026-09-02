@@ -15,33 +15,41 @@ h1 {
     font-weight: 700;
 }
 
-img {
+.roster__logo-wrap {
+    position: relative;
+}
+
+.roster__logo {
     max-width: 200px;
     height: auto;
+}
+
+.roster__badge{
+    position: absolute;
+    top: -5px; 
 }
 
 h2 {
     font-size: 1.5rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
-ul {
-    line-height: 1.5;
+.roster__list {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
 }
 
-a {
+.roster__link {
     color: aquamarine;
     text-decoration: none;
 }
 
-a:hover {
+.roster__link:hover {
     text-decoration: underline;
 }
 
-button {
+.roster__button {
     font-size: 1rem;
     text-transform: capitalize;
     color: cornflowerblue;
