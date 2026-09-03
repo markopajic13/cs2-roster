@@ -2,17 +2,44 @@
 
 body {
    /*min-height: 100vh;*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 2;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    line-height: 2;
     color: black;
     background: linear-gradient(180deg, white, red);
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
 }
 
-h1 { 
+.roster {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "players"
+    "footer";
+    gap: 20px;
+    
+    max-width: 380px;
+    margin: 40px auto;
+    padding: 30px 24px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 16px;
+}
+
+.roster__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.roster__title { 
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.4rem;
     font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ff3b30;
+    
 }
 
 .roster__logo-wrap {
@@ -20,7 +47,7 @@ h1 {
 }
 
 .roster__logo {
-    max-width: 200px;
+    max-width: 180px;
     height: auto;
 }
 
@@ -29,30 +56,70 @@ h1 {
     top: -5px; 
 }
 
-h2 {
-    font-size: 1.5rem;
+.roster__players {
+    grid-area: players;
+}
+
+.roster__heading {
+     font-size: 0.85rem;
     text-transform: uppercase;
-    text-align: center;
+    letter-spacing: 2px;
+    color: #999;
 }
 
 .roster__list {
     display: flex;
     justify-content: space-evenly;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.roster__player {
+    background-color: #2a2a2a;
+    padding: 14px 10px;
+    border-radius: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    flex: 1 1 80px;
+    text-align: center;
+    list-style: none;
+
+}
+
+
+.roster__footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .roster__link {
-    color: aquamarine;
+    font-size: 0.85rem;
+    color: #999;
     text-decoration: none;
+    letter-spacing: 0.5px;
 }
 
 .roster__link:hover {
+    color: #ff3b30;
     text-decoration: underline;
 }
+
 
 .roster__button {
     font-size: 1rem;
     text-transform: capitalize;
-    color: cornflowerblue;
-    background-color: blueviolet;
-    background: linear-gradient(to right , blueviolet, blue)
+    color: white;
+    border:none;
+    padding: 10px 26px;
+    border-radius: 99px;
+
+    background: linear-gradient(to right, #ff3b30, #ff6b3d)
 }
+
+.roster__button:active {
+    background: #cc2f26;
+}
+
