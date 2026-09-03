@@ -1,16 +1,22 @@
 .survey {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 2;
-    background: linear-gradient(to right, violet, blue);
-    background-repeat: no-repeat;
+    background-color: #1a1a1a;
+    color: white;
     text-align: center;
+
+    max-width: 380px;
+    margin: 40px auto;
+    padding: 30px 24px;
+    border-radius: 16px;
 }
 
 .survey__heading {
+    font-family: 'Rajdhani', sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: aquamarine;
-    text-align: center;
+    letter-spacing: 2px;
+    color: #ff3b30;
 }
 
 .survey__label {
@@ -18,9 +24,12 @@
     letter-spacing: 0.5px;
 }
 
-.survey__label--nickname {
-    color: aquamarine;
+.survey__heading {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff3b30;
 }
 
 .survey__label--map {
@@ -45,25 +54,30 @@
 
 .survey__select {
     font-size: 1rem;
-    color: cornflowerblue;
-    gap: 10px ;
+    color: #ff3b30;
 }
 
 .survey__submit {
     font-size: 1rem;
     text-transform: capitalize;
-    color: cornflowerblue;
-    background: linear-gradient(to right, blueviolet, blue);
+    color: white;
+    border: none;
+    padding: 10px 26px;
+    border-radius: 999px;
+    background: linear-gradient(to right, #ff3b30, #ff6b3d);
     display: block;
-    width: 300px;
-    margin: auto;
+    margin: 16px auto 0;
 }
 
+.survey__submit:hover {
+    background: #cc2f26;
+}
 .survey__back-link {
-    color: aquamarine;
+    color: #999;
     text-decoration: none;
 }
 
 .survey__back-link:hover {
+    color: #ff3b30;
     text-decoration: underline;
 }
