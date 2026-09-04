@@ -1,7 +1,7 @@
 
 
 body {
-   /*min-height: 100vh;*/
+    min-height: 100vh;
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    line-height: 2;
     color: black;
     background: linear-gradient(180deg, white, red);
@@ -115,11 +115,14 @@ body {
     border:none;
     padding: 10px 26px;
     border-radius: 99px;
-
+    
     background: linear-gradient(to right, #ff3b30, #ff6b3d)
 }
 
 .roster__button:active {
     background: #cc2f26;
+    transform: scale(1.25);
+    transition: all 0.5s;
+    
 }
 

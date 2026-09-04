@@ -1,3 +1,12 @@
+body {
+    min-height: 100vh;  
+    background: linear-gradient(180deg, white, red);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 .survey {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 2;
@@ -67,11 +76,13 @@
     background: linear-gradient(to right, #ff3b30, #ff6b3d);
     display: block;
     margin: 16px auto 0;
+    transition:all 0.5;
 }
 
 .survey__submit:hover {
-    background: #cc2f26;
+    transform: scale(1.25);
 }
+
 .survey__back-link {
     color: #999;
     text-decoration: none;
@@ -80,4 +91,5 @@
 .survey__back-link:hover {
     color: #ff3b30;
     text-decoration: underline;
+    
 }
