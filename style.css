@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+    .roster__list { 
+        flex-direction: column;
+        
+    }
+}
 
 
 body {
@@ -8,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 .roster {
     display: grid;
@@ -84,7 +91,6 @@ body {
     flex: 1 1 80px;
     text-align: center;
     list-style: none;
-
 }
 
 
@@ -107,22 +113,30 @@ body {
     text-decoration: underline;
 }
 
-
 .roster__button {
     font-size: 1rem;
     text-transform: capitalize;
     color: white;
-    border:none;
+    border: none;
     padding: 10px 26px;
     border-radius: 99px;
-    
-    background: linear-gradient(to right, #ff3b30, #ff6b3d)
+    background: linear-gradient(to right, #ff3b30, #ff6b3d);
+    animation-name: bounce;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15%);
+    }
 }
 
 .roster__button:active {
-    background: #cc2f26;
-    transform: scale(1.25);
-    transition: all 0.5s;
-    
+    opacity: 0.5;
 }
 
