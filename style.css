@@ -1,7 +1,6 @@
 @media (max-width: 600px) {
-    .roster__list { 
+    .roster__list {
         flex-direction: column;
-        
     }
 }
 
@@ -17,6 +16,7 @@ body {
 
 
 .roster {
+
     display: grid;
     grid-template-areas: 
     "header"
@@ -91,6 +91,7 @@ body {
     flex: 1 1 80px;
     text-align: center;
     list-style: none;
+    
 }
 
 
