@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 body {
     min-height: 100vh;
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    line-height: 2;
@@ -105,7 +107,7 @@ body {
     letter-spacing: 0.5px;
 
     &:hover {
-        color: #ff3b30;
+        color: var(--red-button);
         text-decoration: underline;
     }
 }
@@ -117,7 +119,7 @@ body {
     border: none;
     padding: 10px 26px;
     border-radius: 99px;
-    background: linear-gradient(to right, #ff3b30, #ff6b3d);
+    background: linear-gradient(to right, var(--red-button ), var(--orange-button));
     animation-name: bounce;
     animation-duration: 0.8s;
     animation-timing-function: ease-in-out;
