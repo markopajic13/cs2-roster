@@ -1,10 +1,3 @@
-@media (max-width: 600px) {
-    .roster__list {
-        flex-direction: column;
-    }
-}
-
-
 body {
     min-height: 100vh;
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    line-height: 2;
@@ -14,9 +7,8 @@ body {
     background-size: cover;
 }
 
-
 .roster {
-
+    
     display: grid;
     grid-template-areas: 
     "header"
@@ -46,7 +38,6 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #ff3b30;
-    
 }
 
 .roster__logo-wrap {
@@ -68,7 +59,7 @@ body {
 }
 
 .roster__heading {
-     font-size: 0.85rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #999;
@@ -79,6 +70,12 @@ body {
     justify-content: space-evenly;
     gap: 12px;
     flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .roster__list {
+        flex-direction: column;
+    }
 }
 
 .roster__player {
@@ -94,7 +91,6 @@ body {
     
 }
 
-
 .roster__footer {
     grid-area: footer;
     display: flex;
@@ -107,11 +103,11 @@ body {
     color: #999;
     text-decoration: none;
     letter-spacing: 0.5px;
-}
 
-.roster__link:hover {
-    color: #ff3b30;
-    text-decoration: underline;
+    &:hover {
+        color: #ff3b30;
+        text-decoration: underline;
+    }
 }
 
 .roster__button {
@@ -133,7 +129,7 @@ body {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-15%);
+        transform: translateY(-10px);
     }
 }
 
