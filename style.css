@@ -91,6 +91,18 @@ body {
     text-align: center;
     list-style: none;
     
+    &::before {
+        content:"Igrač";
+        display: inline-block;
+        justify-content: center;
+        align-items: baseline;
+        font-size: 0.7rem;
+        background: #444;
+        padding: 2px;
+        border-radius: 8px;
+        margin-right: 8px;
+        
+    }
 }
 
 .roster__footer {

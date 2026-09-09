@@ -1,4 +1,14 @@
 :root {
-    --red-button: #ff3b30;
-    --orange-button: #ff6b3d;
+  --boja-primarna: #2f6f6b;
+  --boja-tekst: #1a1a1a;
+  --boja-pozadina: #ffffff;
+
+  --razmak-mali: 0.5rem;
+  --razmak-srednji: 1rem;
+  --razmak-veliki: 2rem;
+
+  --font-osnovni: 1rem;
+  --font-naslov: 2rem;
+
+  --radius: 0.5rem;
 }
