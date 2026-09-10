@@ -1,25 +1,32 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="gird-demo.css" />
+    <link rel="stylesheet" href="grid-demo.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid Demo</title>
   </head>
 
   <body>
-    <div class="pricing">
-      <div class="pricing__basic">Basic</div>
-      <div class="pricing__pro">Pro</div>
-      <div class="pricing__enterprise">Enterprise</div>
+    <div class="layout">
+      <header class="layout__header">CS2 NEWS</header>
+      <nav class="layout__nav">HOME · MATCHES · TEAMS · UPDATES · WORKSHOP · MAJORS</nav>
 
-      <div class="gallery__thumb">sličica 1</div>
-      <div class="gallery__thumb">sličica 2</div>
-      <div class="gallery__thumb">sličica 3</div>
+      <article class="layout__feature">
+        Valve has reportedly added a new competitive map to the Active Duty pool
+      </article>
+      <aside class="layout__aside layout__aside--top">
+        Subtick update promises smoother peeks and tighter registration
+      </aside>
+      <aside class="layout__aside layout__aside--bottom">
+        Sticker capsule from the last Major sells out within the first hour
+      </aside>
 
-      <div class="blog">
-        <div class="blog__content">tekst članka</div>
-        <div class="blog__sidebar">bočna traka</div>
-      </div>
+      <h2 class="layout__section-title">TRENDING NEWS</h2>
+
+      <div class="card">The secret to holding this ancient Dust II bombsite</div>
+      <div class="card">Early roster changes shake up the top eight teams</div>
+      <div class="card">Analyst wary of favorites ahead of the next Major</div>
+      <div class="card">Grand final: losing squad devastated after overtime</div>
     </div>
   </body>
 </html>
