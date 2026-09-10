@@ -1,57 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style2.css">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="variables.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fan anketa</title>
-    </head>
-    <body>
-        <form class="survey" action="/obrada" method="POST">
-            <label class="survey__label--nickname" for="fan-ime">Tvoj nadimak:</label>
-            <input class="survey__input" type="text" id="fan-ime" name="korisnik" placeholder="Unesi nadimak">
-           
-            <p class="survey__heading">Izaberi omiljenog igraca</p>
-            
-        <div class="survey__radio--group" >
-            <div class="survey__option">
-            <input type="radio" id="frozen" name="omiljeni-igrac" value="frozen" checked>
-            <label for="frozen">frozen</label>
-            </div>
-            
-            <div class="survey__option">
-            <input type="radio" id="jacobbb" name="omiljeni-igrac" value="jacobbb">
-            <label for="jacobbb">jacobbb</label>
-            </div>
+  <head>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan anketa</title>
+  </head>
+  <body>
+    <form class="survey" action="/obrada" method="POST">
+      <label class="survey__label--nickname" for="fan-ime">Tvoj nadimak:</label>
+      <input
+        class="survey__input"
+        type="text"
+        id="fan-ime"
+        name="korisnik"
+        placeholder="Unesi nadimak"
+      />
 
-            <div class="survey__option">
-            <input type="radio" id="Twistzz" name="omiljeni-igrac" value="Twistzz">
-            <label for="Twistzz">Twistzz</label>
-            </div>   
-            
-            <div class="survey__option">
-            <input type="radio" id="JBOEN" name="omiljeni-igrac" value="JBOEN">
-            <label for="JBOEN">JBOEN</label>
-            </div>
-            
-            <div class="survey__option">
-            <input type="radio" id="Neityu" name="omiljeni-igrac" value="Neityu">
-            <label for="Neityu">Neityu</label>
-            </div>
+      <p class="survey__heading">Izaberi omiljenog igraca</p>
+
+      <div class="survey__radio--group">
+        <div class="survey__option">
+          <input type="radio" id="frozen" name="omiljeni-igrac" value="frozen" checked />
+          <label for="frozen">frozen</label>
         </div>
 
-        
+        <div class="survey__option">
+          <input type="radio" id="jacobbb" name="omiljeni-igrac" value="jacobbb" />
+          <label for="jacobbb">jacobbb</label>
+        </div>
 
-            <label for="izbor-mape">Omiljena-mapa</label>
-            <select class="survey__select" id="izbor-mape" name="mapa">
-                <option value="mirage">Mirage</option>
-                <option value="inferno">Inferno</option>
-                <option value="nuke">Nuke</option> 
-            </select>
-        
-            <button class="survey__submit">Posalji</button>
-            <a class="survey__back-link" href="index.html">Nazad na Roster</a>
-        </form>
-    </body>
+        <div class="survey__option">
+          <input type="radio" id="Twistzz" name="omiljeni-igrac" value="Twistzz" />
+          <label for="Twistzz">Twistzz</label>
+        </div>
+
+        <div class="survey__option">
+          <input type="radio" id="JBOEN" name="omiljeni-igrac" value="JBOEN" />
+          <label for="JBOEN">JBOEN</label>
+        </div>
+
+        <div class="survey__option">
+          <input type="radio" id="Neityu" name="omiljeni-igrac" value="Neityu" />
+          <label for="Neityu">Neityu</label>
+        </div>
+      </div>
+
+      <label for="izbor-mape">Omiljena-mapa</label>
+      <select class="survey__select" id="izbor-mape" name="mapa">
+        <option value="mirage">Mirage</option>
+        <option value="inferno">Inferno</option>
+        <option value="nuke">Nuke</option>
+      </select>
+
+      <button class="survey__submit">Posalji</button>
+      <a class="survey__back-link" href="index.html">Nazad na Roster</a>
+    </form>
+  </body>
 </html>

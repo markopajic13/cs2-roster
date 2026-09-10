@@ -1,0 +1,45 @@
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.pricing__basic {
+  grid-column: span 4;
+  text-align: center;
+}
+
+.pricing__pro {
+  grid-column: span 4;
+  text-align: center;
+}
+
+.pricing__enterprise {
+  grid-column: span 4;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.gallery__thumb {
+  grid-column: span 3;
+  text-align: end;
+}
+
+.blog {
+  display: block;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.blog__content {
+  grid-column: 6/2;
+}
+
+.blog__sidebar {
+  grid-column: 6;
+}

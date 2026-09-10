@@ -21,7 +21,7 @@ body {
     max-width: 380px;
     margin: 40px auto;
     padding: 30px 24px;
-    background-color: #1a1a1a;
+    background-color: var(--boja-tekst);
     color: white;
     border-radius: 16px;
 }
@@ -39,7 +39,7 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #ff3b30;
+    color: var(--boja-primarna);
 }
 
 .roster__logo-wrap {
